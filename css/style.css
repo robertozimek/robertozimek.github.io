@@ -146,3 +146,10 @@ footer .footer-below {
   background: white;
   border: solid 2px white;
 }
+
+.pdf {
+  display: block;
+  margin: 0 auto 20px;
+  width:85%;
+  height:600px;
+}
