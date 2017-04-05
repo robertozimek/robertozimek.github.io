@@ -106,7 +106,76 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
+                <form class="well form-horizontal" action=" " method="post"  id="contact_form" data-toggle="validator" role="form">
+                  <fieldset>
+                  <!-- First Name -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                      <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- Last Name -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                      <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- E-Mail -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                      <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                          <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Phone #</label>
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                          <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Message:</label>
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                          <textarea class="form-control" name="comment" placeholder="" required></textarea>
+                      </div>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
 
+                  <!-- Success Message -->
+                  <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, I'll will get back to you shortly.</div>
+
+                  <!-- Send Button -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                      <button type="submit" class="btn">Send <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -138,7 +207,25 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
+            <p>
+              I graduated from Hunter College with a computer science degree in order to purse software development.
+              <br /> <br />
+              Backstory:<br />
+              It has been my dream to work in the tech field since I was a kid. I had begged my parents to get me my first computer when I was 8 years old, at
+              the time I was more interested in playing video games, but once my parents caved and got me my first Hewlett-Packard computer I had begun
+              to tricker and explore and become fascinated by tech. I spent so many hours in front of my computer, and was unafraid
+              to make any changes to see how things worked (especially after I discovered I can format my computer and reinstall windows if anything ever went wrong &#128513;).
+              <br /><br />
+              As I got older and was getting asked that ridiculous question that teachers would ask "what do you wanna be when you grow up?",
+              my 13 year old self didn't really have an answer. I knew I loved tech but hadn't really know about what it was that I really wanted to do.
+              At the time I was still an avid gamer and so I figured I'd like to create video games, but didn't actually know how that was done.
+              So I went online to research and learned all about programming lanugages and software development.
+              And that is when I decided I wanted to purse software development. Since then I have stopped being an avid gaming but I still fully enjoy coding and building software.
+              <br /><br />
+              Fun Fact:<br />
+              I speak polish fluently and just started learning german, my goal is to become fluent in the next few years.
 
+            </p>
           </div>
         </div>
       </div>
@@ -149,11 +236,12 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <h3>Location</h3>
+                        <h4>Greenpoint/Brooklyn</h4>
                         <h4>New York City</h4>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
@@ -166,10 +254,6 @@
                                 <a href="https://www.xing.com/profile/Robert_Ozimek2" class="btn-social btn-outline"><i class="fa fa-fw fa-xing"></i></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Me</h3>
-                        <p>Computer science graduate with a passion for creating software.</p>
                     </div>
                 </div>
             </div>
@@ -188,6 +272,7 @@
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="bower_components/jquery.easing/dist/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
     <script type="text/javascript" src="js/scrolling.js"></script>
   </body>
 

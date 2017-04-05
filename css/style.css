@@ -4,6 +4,7 @@ body {
 }
 p {
   font-family: 'Dosis', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
 }
 header {
   text-align: center;
@@ -79,7 +80,7 @@ hr.rocket-dark:after {
 }
 
 section {
-  padding: 20px 0;
+  padding: 55px 0;
 }
 
 section h2 {
@@ -100,7 +101,6 @@ section.about {
     padding-top: 75px;
   }
 }
-
 footer {
   color: white;
 }
@@ -129,7 +129,6 @@ footer .footer-below {
   font-size: 20px;
   line-height: 45px;
 }
-
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -146,10 +145,12 @@ footer .footer-below {
   background: white;
   border: solid 2px white;
 }
-
 .pdf {
   display: block;
   margin: 0 auto 20px;
-  width:85%;
+  width:100%;
   height:600px;
+}
+#success_message{
+  display: none;
 }
