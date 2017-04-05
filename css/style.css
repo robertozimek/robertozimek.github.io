@@ -148,7 +148,7 @@ footer .footer-below {
 .pdf {
   display: block;
   margin: 0 auto 20px;
-  width:100%;
+  width:90%;
   height:600px;
 }
 #success_message{
